@@ -1,0 +1,32 @@
+# Claude / AI assistant files
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Composer dependencies (regenerate with: composer install)
+vendor/
+
+# PHPUnit caches
+.phpunit.cache/
+.phpunit.result.cache
+
+# Release zips (build with: php scripts/build-zip.php)
+*.zip
+
+# JS dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs & env
+*.log
+.env
+.env.*

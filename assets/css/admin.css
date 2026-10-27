@@ -1,0 +1,80 @@
+/* Web of D Form Locator: Tools page styles. Uses WP admin colours so it fits every admin scheme. */
+
+.gffl-scan {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 12px;
+	margin: 16px 0;
+}
+
+.gffl-scan progress {
+	width: 240px;
+	max-width: 100%;
+	height: 12px;
+}
+
+.gffl-scan-progress-text {
+	color: #50575e;
+}
+
+.gffl-scan-message {
+	flex-basis: 100%;
+}
+
+.gffl-scan-message.notice {
+	margin: 0;
+}
+
+.gffl-summary {
+	font-size: 14px;
+}
+
+.gffl-muted {
+	color: #646970;
+}
+
+.gffl-badge {
+	display: inline-block;
+	margin-left: 4px;
+	padding: 1px 8px;
+	border-radius: 10px;
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: 600;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+.gffl-badge--active {
+	background: #edfaef;
+	color: #00650f;
+}
+
+.gffl-badge--inactive {
+	background: #f0f0f1;
+	color: #50575e;
+}
+
+.gffl-badge--trashed {
+	background: #fcf9e8;
+	color: #8a6116;
+}
+
+.gffl-badge--missing {
+	background: #fcf0f1;
+	color: #b32d2e;
+}
+
+.gffl-results .column-form {
+	width: 24%;
+}
+
+.gffl-results .column-type,
+.gffl-results .column-status {
+	width: 10%;
+}
+
+.gffl-results .column-method code {
+	font-size: 11px;
+}

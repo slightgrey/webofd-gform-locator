@@ -1,0 +1,44 @@
+{
+  "name": "webofd/webofd-form-locator",
+  "description": "Finds every page, template, widget and field where a Gravity Forms form is embedded.",
+  "version": "1.0.1",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6",
+    "squizlabs/php_codesniffer": "^3.13",
+    "wp-coding-standards/wpcs": "^3.1",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpstan/phpstan": "^2.1",
+    "szepeviktor/phpstan-wordpress": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "GFFormLocator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GFFormLocator\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "analyse": "phpstan analyse --memory-limit=1G",
+    "test": "phpunit"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4.33"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

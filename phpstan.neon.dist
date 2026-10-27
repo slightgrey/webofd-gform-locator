@@ -1,0 +1,12 @@
+includes:
+	- vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+	level: 6
+	phpVersion: 70400
+	paths:
+		- webofd-form-locator.php
+		- uninstall.php
+		- src
+	bootstrapFiles:
+		- tests/phpstan-bootstrap.php
